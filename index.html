@@ -14521,6 +14521,22 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Data-representation:">Data representation:<a class="anchor-link" href="#Data-representation:">&#182;</a></h3><ul>
+<li><em>date-</em> Date for which the daily totals were collected</li>
+<li><em>positive-</em> Total number of people who have tested positive for COVID-19 so far</li>
+<li><em>negative-</em> Total number of people who have negative positive for COVID-19 so far</li>
+<li><em>hospitalized_currently-</em> Number of people in hospital for COVID-19 on this day</li>
+<li><em>hospitalized_cumulative-</em> tal number of people who have gone to the hospital for COVID-19 so far, including those who have since recovered or died. </li>
+<li><em>in_icu_currently-</em> Total number of people in the ICU for COVID-19 on this day</li>
+<li><em>in_icu_cumulative-</em> Total number of people who have gone to the ICU for COVID-19 so far, including those who have since recovered or died </li>
+<li><em>recovered-</em> Total number of people who have recovered from COVID-19 so far.</li>
+<li><em>death-</em> Total number of people who have died as a result of COVID-19 so far.</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Tidying-the-data">Tidying the data<a class="anchor-link" href="#Tidying-the-data">&#182;</a></h3><p>Although we now have our data in python and can now work with it using code, it will be easier to clean it up first before working with it. This is where we delete columns we don't need and represent data in a format that will facilitate future manipulation.<br>Both tables above contain columns that we won't need, when analysing the data. So, we'll start by removing those and keeping only the relevant columns. Luckily panadas makes this easy for us to do.</p>
 <ul>
 <li>For this tutorial, we're only Maryland, we'll only collect data (relevant columns) for MD. We'll also sort this in ascending order of date. This might be useful later during analysis<br></li>
@@ -15229,7 +15245,7 @@ This is where some visualizations of our data come in handy</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Again, this is a</p>
+<p>Again here, a number closer to 1 indicates a strong correlation between columns. It's time to plot some data and vizualize what's going in. Let's focus the following coloms: [death, hospitalized, negative,]</p>
 
 </div>
 </div>
